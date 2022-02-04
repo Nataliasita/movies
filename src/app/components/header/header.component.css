@@ -1,0 +1,32 @@
+.header{
+    width: 100vw;
+    height: 65vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    margin-top: 10vh;
+    animation: banner 12s infinite;
+}
+@keyframes banner{
+    0% ,30%
+     {
+      background-image: url("src/assets/images/spider.jpg");
+    }
+    35%,65% {
+      background-image: url("src/assets/images/cruella.png");
+    }
+    70%,100%{
+      background-image: url("src/assets/images/sing.png");
+  }
+}
+.header::after{
+    content:"";
+    position:absolute;
+    top:10vh;
+    left:0;
+    width:99%;
+    height:60vh;
+    background:rgba(0, 0, 0, 0.171);
+    z-index:24;
+    /* backdrop-filter: blur(2px); */
+}

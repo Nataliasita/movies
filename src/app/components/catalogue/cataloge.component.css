@@ -1,0 +1,50 @@
+.container_catalogue{
+    width: 100vw;
+    height: 250vh;
+    display: flex;
+    background-color: #e9e9e9;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+.bar_nav{
+    height: 10vh;
+    width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    display: flex;
+    background: #010024;
+    align-items: center;
+    padding: 0 2vw;
+    justify-content:space-between;
+}
+.title_catalogue{
+    height: 9vh;
+    width: 14vw;
+    border-radius: 8px;
+}
+.btn_close{
+    width: 8vw;
+    height: 6vh;
+    background: #fd6075;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border:0;
+    margin:6vh 0 6vh 4.2vw;
+    font-size: 1em;
+}
+.btn_close:hover{
+    cursor: pointer;
+    background: #ff3d57;
+}
+.contain-catalogue{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ff3d57;
+    margin-top: 2vh;
+}

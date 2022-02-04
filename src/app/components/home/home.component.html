@@ -1,0 +1,29 @@
+<section class="container_home">
+
+    <img  class="img_home" src="./assets/images/fnd_home.png" alt="">
+
+         <img  class="title" src="./assets/images/title3.png" alt="">    
+
+
+    <div class="container-form" *ngIf='contain_log'>
+
+        <form action="" [formGroup]="formLogin" (submit)="send()">
+               
+                <input class="data-form" type="text" placeholder="Ingresa tu nickname" formControlName="name">
+
+
+                <button id="btn_login" [routerLink]="['/cataloge']" [disabled]="formLogin.invalid">Iniciar Sesion</button>
+        
+        </form>
+
+        
+
+
+
+    </div>
+
+
+        
+
+
+</section>
