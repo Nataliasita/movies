@@ -3,7 +3,7 @@
           <img class="title_catalogue" src="./assets/images/title3.png" alt="">
    
           <li class="nameUser">
-            <p class="color"></p>
+
           </li>
           <button [routerLink]="['/home']" class='btn_close' >Sign out</button>
 
@@ -13,14 +13,15 @@
         <input class="search" type="text" placeholder="Search movie">
 
         <div class="filter">
-
-
-
+            <h3>Filters</h3>
+                <form action="" class="form_filter">
+                       <input  id="all" type="radio">
+                          <label for="all"> All movies</label>
+                   </form>
         </div>
 
     <div class="contain-catalogue">
         <app-card-movie></app-card-movie>
-
 
     </div>
 

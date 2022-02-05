@@ -13,7 +13,7 @@ import { map } from 'rxjs';
 export class DataMoviesService {
 
 private apiKey:string="12de258868edec7f2883089aee6a60ec";
-private urlMovieDB:string="https://api.themoviedb.org/550/"
+private urlMovieDB:string="https://api.themoviedb.org/3/"
 
 
   constructor( private http:HttpClient) { 

@@ -1,14 +1,7 @@
-<div class="card_movies">
+<div class="card_movies" *ngFor=" let note of notesArray">
 
-    <h1 class="display-4">{{movList}}</h1>
-    <img  *ngIf="movList" class="card-img-top" src="https://image.tmdb.org/t/p/original/" alt="Card image cap">
-    <img class="card-img-top"  *ngIf="" src="https://www.genesisglobalschool.edu.in/wp-content/uploads/2016/09/noimage.jpg" alt="Card image cap">
-    
-    <hr class="my-4">
-    <p></p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" (click)="goBack()" role="button">Regresar</a>
-    </p>
+    <h1 >{{note.title}}</h1>
+ 
 
 </div>
 

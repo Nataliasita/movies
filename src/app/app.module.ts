@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardMovieComponent } from './components/card-movie/card-movie.component' 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
