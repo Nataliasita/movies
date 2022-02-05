@@ -1,8 +1,12 @@
-<div class="card_movies" *ngFor=" let note of notesArray">
+<div class="card_movies" >
+<div  class='card' *ngFor=" let note of notesArray">
+    <img class="img" src="{{note.image}}" alt="">
 
-    <h1 >{{note.title}}</h1>
- 
-
+    <div class="description_movie">
+    <h4 class="title_movie" >{{note.title}}</h4>
+    </div>
+</div>
+  
 </div>
 
 

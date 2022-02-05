@@ -1,6 +1,6 @@
 .container_catalogue{
     width: 100vw;
-    height: 285vh;
+    height: 315vh;
     display: flex;
     background-color: #e9e9e9;
     flex-direction: column;
@@ -9,9 +9,10 @@
     align-items: center;
     overflow-x:hidden;
     overflow-y:scroll;
+    flex-wrap: wrap;
 }
 .bar_nav{
-    height: 10vh;
+    height: 11vh;
     width: 100vw;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     margin-left: 0;
@@ -22,6 +23,7 @@
     align-items: center;
     padding: 0 2vw;
     justify-content:space-between;
+    overflow: hidden;
 }
 .title_catalogue{
     height: 9vh;
@@ -43,8 +45,8 @@
     background: #ff3d57;
 }
 .contain-catalogue{
-    height: 184vh;
-    width: 78vw;
+    height: 213vh;
+    width: 79vw;
     background: #FFFFFF;
     /* background: linear-gradient( rgb(0, 174, 255, 0.1), #ffffff); */
     top: 95vh;
@@ -52,14 +54,13 @@
     z-index: 50;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-gap: 2vw;
-    grid-row: auto;
-    overflow-y: scroll;
     right: 1vw;
-    justify-content: center;
-    padding:  3vh 1.5vw;
+    padding:  0;
     border-radius: 5px;
-
+    overflow: hidden;
+    
 }
 .nameUser{
     width: 10vw;
@@ -78,15 +79,15 @@
     border: none;
     outline: none;
     border-radius: 50px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding-left: 1vw;
 }
 .filter{
-    width: 18vw;
+    width: 16vw;
     height: 50vh;
     background-color: #ffffff;
     position: absolute;
-    padding: 2em;
+    padding: 3em;
     left: 0.5vw;
     top: 95vh;
     display: flex;
@@ -95,7 +96,7 @@
     justify-content: left;
     border-top-right-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    color: #4e4e4e;
+    color: #424242;
 }
 .form_filter{
     padding-top: 3vh;

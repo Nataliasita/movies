@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NameUserService } from '../../services/name-user.service'
-import { CardMovieComponent } from '../card-movie/card-movie.component'
+
 
 @Component({
   selector: 'app-cataloge',

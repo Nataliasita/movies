@@ -1,12 +1,55 @@
 .card_movies{
-    width: 13vw;
-    height: 40vh;
+    width: 79vw;
+    height: 213vh;
     margin:0;
+    padding-top: 2vh;
     /* background: linear-gradient( rgb(0, 174, 255, 0.1) 80%, #ffffff); */
-    background: rgba(255, 230, 0, 0.253);
+    /* background: rgba(255, 255, 255, 0.253); */
     justify-content: center;
     display: flex;
-    flex-direction: column;
-    padding: 0 0.8em;
+    flex-direction: row;
+    flex-wrap: wrap;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.card{
+    height: 48vh;
+    width: 14vw;
+    display: flex;
+    margin: 0.6em;
+    flex-direction: column;
+    background-color:#ffffff;
+    z-index: 1;
+    border-radius: 3px;
+    justify-content: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.img{
+    height: 39vh;
+    width: 14vw;
+    z-index: 2;
+    position: relative;
+    bottom: 9vh;
+    border-top-right-radius:7px;
+    border-top-left-radius: 7px;
+}
+.title_movie{
+    width: 13vw;
+    text-align: left;
+    color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 1vw;
+}
+.description_movie{
+    height: 9.5vh;
+    width: 14vw;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+
+}
+
