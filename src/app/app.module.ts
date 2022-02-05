@@ -9,7 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { CatalogeComponent } from './components/catalogue/cataloge.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CardMovieComponent } from './components/card-movie/card-movie.component' 
+import { CardMovieComponent } from './components/card-movie/card-movie.component';
+
 
 
 
@@ -19,7 +20,8 @@ import { CardMovieComponent } from './components/card-movie/card-movie.component
     HomeComponent,
     CatalogeComponent,
     HeaderComponent,
-    CardMovieComponent,
+    CardMovieComponent
+
 
   ],
   imports: [
