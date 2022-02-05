@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailValidator, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { NameUserService } from '../../services/name-user.service'
 
 @Component({
   selector: 'app-home',
@@ -21,7 +22,7 @@ export class HomeComponent implements OnInit {
    public formLogin!:FormGroup 
 
 
- constructor( private formBuilder:FormBuilder) {
+ constructor( private formBuilder:FormBuilder , private serviceName: NameUserService) {
  }
 
  ngOnInit(): void {
@@ -37,12 +38,12 @@ export class HomeComponent implements OnInit {
 
  }
 
- send(): any{
-   if(this.formLogin.valid){
-     console.log(this.formLogin!.value);
+ send(){
+    //  console.log(this.formLogin!.value);
+     this.serviceName.shareName.emit({data:this.formLogin!.value})
      this.onResetForm(); 
-   }
-   
+
+  
  }
 
  onResetForm(){

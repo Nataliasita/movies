@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { NameUserService } from '../../services/name-user.service'
+import { CardMovieComponent } from '../card-movie/card-movie.component'
 
 @Component({
   selector: 'app-cataloge',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogeComponent implements OnInit {
 
-  constructor() { }
+  
+ h:any
 
+
+  constructor(private serviceName: NameUserService) {
+
+
+   }
+  // public listnameUser:Array<any>= [];
   ngOnInit(): void {
+    this.serviceName.shareName.subscribe(data =>{
+      console.log('recibiendo data...', data)
+      // this.listnameUser.push(data)
+      this.h=data.data.name
+      console.log(this.h)
+      return this.h 
+      
+    })
+
+
+
   }
 
 }

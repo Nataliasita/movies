@@ -6,7 +6,7 @@ import { CatalogeComponent } from './components/catalogue/cataloge.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'cataloge', component: CatalogeComponent},
+  {path: 'catalogue', component: CatalogeComponent},
   {path: '**', pathMatch: 'full', redirectTo:''}
 
 ];

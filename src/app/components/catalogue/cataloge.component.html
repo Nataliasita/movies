@@ -1,14 +1,25 @@
 <section class="container_catalogue">
     <nav class="bar_nav">
           <img class="title_catalogue" src="./assets/images/title3.png" alt="">
-
+   
+          <li class="nameUser">
+            <p class="color"></p>
+          </li>
           <button [routerLink]="['/home']" class='btn_close' >Sign out</button>
 
     </nav>
     <app-header></app-header>
 
-    <div class="contain-catalogue">
+        <input class="search" type="text" placeholder="Search movie">
 
+        <div class="filter">
+
+
+
+        </div>
+
+    <div class="contain-catalogue">
+        <app-card-movie></app-card-movie>
 
 
     </div>
