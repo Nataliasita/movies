@@ -2,8 +2,8 @@
     <nav class="bar_nav">
           <img class="title_catalogue" src="./assets/images/title3.png" alt="">
    
-          <li class="nameUser">
-
+          <li class="nameUser" *ngFor=" let user of listnameUser" >
+              <span>dfdsfdsf</span>
           </li>
           <button [routerLink]="['/home']" class='btn_close' >Sign out</button>
 
