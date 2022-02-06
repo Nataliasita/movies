@@ -66,4 +66,12 @@
     right: 6%;
     top: 17%;
 }
-
+.alert-form{
+    height: 2vw;
+    width: 21vw;
+    z-index: 50;
+    text-align: center;
+    font-size: 0.6em;
+    color: #ffffff;
+    font-style: italic;
+}

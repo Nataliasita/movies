@@ -7,9 +7,17 @@
 
     <div class="container-form" *ngIf='contain_log'>
 
-        <form action="" [formGroup]="formLogin" >
+        <form action="" [formGroup]="formLogin" autocomplete="off">
                
-                <input class="data-form" type="text" placeholder="Enter your nickname" formControlName="name">
+                <input class="data-form" id="name" type="text" placeholder="Enter your nickname" formControlName="name">
+
+        <div *ngIf="formLogin.invalid && (formLogin.dirty || formLogin.touched)" class="alert-form">
+
+            <div *ngIf="formLogin.invalid">
+                 Name must be at least 4 characters long.
+            </div>
+
+        </div>
 
 
                 <button id="btn_login" type="button" [routerLink]="['/catalogue']"  [disabled]="formLogin.invalid" (click)="send()">Login</button>
@@ -22,6 +30,7 @@
 
     </div>
 
+   
 
 
 </section>

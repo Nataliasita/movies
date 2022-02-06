@@ -2,16 +2,17 @@
     <nav class="bar_nav">
           <img class="title_catalogue" src="./assets/images/title3.png" alt="">
    
-          <li class="nameUser" *ngFor=" let user of listnameUser" >
-              <span>dfdsfdsf</span>
+          <li class="nameUser" *ngFor="let item of listnameUser">
+                  {{item.name}}  
           </li>
           <button [routerLink]="['/home']" class='btn_close' >Sign out</button>
 
     </nav>
-    <app-header></app-header>
-
-        <input class="search" type="text" placeholder="Search movie">
-
+                 <app-header></app-header>
+            <div class="container_search">
+                <img id="icon-search" src="./assets/images/buscar.png" alt="">
+              <input class="search" type="text" placeholder="Search movie">
+            </div>
         <div class="filter">
             <h3>Filters</h3>
                 <form action="" class="form_filter">

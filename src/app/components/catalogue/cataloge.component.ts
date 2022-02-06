@@ -10,14 +10,7 @@ import { NameUserService } from '../../services/name-user.service'
 })
 export class CatalogeComponent implements OnInit {
 
-  h!:string
-
-
-  constructor(private serviceName: NameUserService) {
-
-    
-
-   }
+  constructor(private serviceName: NameUserService) { }
   public listnameUser:Array<any>= [];
   
   ngOnInit(): void {
@@ -27,14 +20,12 @@ export class CatalogeComponent implements OnInit {
       
       // this.h=data.data.name
       // console.log(this.h)
-      this.listnameUser.push(data.data.name)
-      console.log(this.listnameUser)
+      // this.listnameUser.push(data.data)
+      this.listnameUser.push(data.data)
+  
 
     })
-
 }
-
-
 
 
 

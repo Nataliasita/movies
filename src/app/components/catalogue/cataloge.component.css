@@ -74,7 +74,7 @@
     background-color: aqua;
 }
 .search{
-    margin-top: 7.5vh;
+
     height: 6vh;
     width: 35vw;
     border: none;
@@ -101,4 +101,16 @@
 }
 .form_filter{
     padding-top: 3vh;
+}
+#icon-search{
+    height: 4.7vh;
+    margin-right: 0.5vw;
+}
+.container_search{
+    width: 50vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
 }

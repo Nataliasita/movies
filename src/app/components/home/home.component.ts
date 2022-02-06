@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { EmailValidator, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NameUserService } from '../../services/name-user.service'
 
@@ -9,6 +9,7 @@ import { NameUserService } from '../../services/name-user.service'
 })
 export class HomeComponent implements OnInit {
 
+  @Input() name!:string
   // constructor() { }
 
   // ngOnInit(): void {
@@ -19,10 +20,11 @@ export class HomeComponent implements OnInit {
 
    title ='example react form';
 
-   public formLogin!:FormGroup 
+  @Input() public formLogin!:FormGroup 
 
 
  constructor( private formBuilder:FormBuilder , private serviceName: NameUserService) {
+   
  }
 
  ngOnInit(): void {
